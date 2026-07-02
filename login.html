@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+<div class="min-h-screen bg-gray-100 ">
+   <header class="fixed w-full z-200">
+        <div class=" p-4 bg-gray-200  shadow-xl">
+             <nav class="container flex flex-row mx-auto gap-x-3 justify-between items-center">
+                <div class="flex flex-row text-center gap-x-3 items-center">
+                    <h1 class=" hover:scale-108 transition duration-300"><a class="font-bold text-xs md:text-base lg:text-xl text-gray-700 
+                         outline-6 outline-gray-700 hover:outline-gray-200 transition duration-300 p-2 mr-4 " href="index.html">DigitalPro</a></h1>
+                    <h2 class=" hidden md:flex   w-39 font-bold text-xs md:text-base lg:text-lg cursor-pointer border-y-3
+                     text-gray-800 font-bold rounded-lg  hover:scale-108 transition duration-300">Marketing Agency</h2>
+                </div>
+                <div class="flex flex-wrap text-center justify-center mx-auto pl-16 sm:pl-90 lg:pl-115 xl:pl-180">
+                    <ul class="flex flex-row gap-5  font-bold  " id="user_info">
+                        <li> 
+                            <a id="link1" class="relative group  font-bold  border border-2 p-2" href="login.html">
+                                Login
+                            </a>
+                        </li>
+                       <li>
+                         <a id="link2" class="relative group w-10 font-bold  border border-2 p-2" href="register.html">
+                            Signup 
+                        </a>
+                       </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="flex lg:pt-10  justify-center items-center min-h-screen">
+        
+            <form class="flex flex-col w-200 min-h-screen md:min-w-screen lg:min-w-fit lg:min-h-full pb-5 sm:pt-20 lg:pt-10 mx-auto
+             justify-center items-center bg-gray-200 text-center text-sm  md:text-lg lg:text-base
+            font-bold text-gray-600 space-y-4 lg:space-y-3 md:rounded-md lg:border-1 lg:border-gray-400 shadow-2xl" action="">
+
+                <h2 class="w-70  rounded-2xl  text-shadow-md mb-6">Enter Login Details</h2>
+
+                <div class="flex flex-col sm:flex-row xl:flex-col gap-8">
+
+                    <div class="space-y-1">
+                        <h2 class="flex text-shadow-md items-left">Email</h2>
+                        <input class="w-67 h-7 xl:w-180 bg-gray-100 pl-2  border-1 border-gray-400 
+                        placeholder:text-gray-500 placeholder:text-sm outline-gray-500"
+                         type="email" placeholder="Enter Email Address" name="Email" id="email"></div>
+
+                    <div class=" space-y-1 ">
+                        <h2 class="flex  text-shadow-md items-left">Password</h2>
+                        <input class="w-67 h-7 xl:w-180 bg-gray-100 pl-2  border-1 border-gray-400 
+                        placeholder:text-gray-500 placeholder:text-sm outline-gray-500"
+                         type="password" placeholder="Enter Password" name="Password" id="password"></div>
+                </div>
+
+                <button id="login" class="w-20 mt-3 rounded-md text-white bg-gray-800" type="submit">Login</button>
+                <a class="text-shadow-sm" href="register.html">Or Signup Now</a>
+
+            </form>
+        
+        
+    </section>
+    </div>
+
+    <script src="js/login.js"></script>
+</body>
+</html>
