@@ -206,7 +206,7 @@ function defaultSearchBar (targetSearch){
 
         
         let x =  filterProducts.map(item => {
-          return `<div  id="${item.id}" price="${item.price}" class=" hover:shadow-2xl hover:-translate-y-4 h-112 w-35 md:w-80 lg:w-50 xl:w-80 bg-gray-200 rounded-sm
+          return `<div  id="${item.id}" price="${item.price}" class=" hover:shadow-2xl hover:-translate-y-4 h-112  w-80  bg-gray-200 rounded-sm
      border-1 border-gray-300  transition duration-300">
                 <img class="w-full h-70 mx-auto  " src= "${item.imgSrc}" alt="productImage">
                 <div class="flex flex-col px-20 mx-auto py-5  text-left  gap-y-2 ">
@@ -230,7 +230,7 @@ function defaultSearchBar (targetSearch){
             </div>`
         })
     
-        allProducts.innerHTML = x
+        allProducts.innerHTML = x.join("")
     
 }
 searchBar.addEventListener("input", function(event) {
