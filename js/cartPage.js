@@ -12,14 +12,14 @@ function addItems () {
      border-1 border-gray-300  transition duration-300">
          
                 <img class="w-full h-70 mx-auto  " src= "${item.imgSrc}" alt="productImage">
-            <div class="flex flex-col px-5 mx-auto py-5  font-bold text-left  gap-y-2 ">
+            <div class="flex flex-col px-5 mx-auto py-5 font-bold text-left  gap-y-2 ">
                     <h2 class="text-lg font-bold">${item.title}</h2>
                     <span class="text-sm">Color : ${item.color}</span>
                     <p class="inline text-sm">Price : ${item.price}.LE</p>
-                      <div class="mt-[-65px] mb-[20px] ml-45 space-x-1  ">
-                        <button class="border border-2  px-[8px] md:px-[10px] font-bold text-base md:text-2xl"  onClick="itemCounter(${item.id}, -1)">-</button>
-                        <span class="w-5 font-bold md:text-2xl" id="counter-${item.id}">1</span>
-                        <button class="border border-2  px-[8px] md:px-[10px] font-bold text-base md:text-2xl" onClick="itemCounter(${item.id}, +1)">+</button>                                       
+                      <div class="mt-[-65px] mb-[20px] ml-45 space-x-1  font-bold md:font-normal ">
+                        <button class="border border-2  px-[8px] md:px-[10px]  text-base md:text-2xl"  onClick="itemCounter(${item.id}, -1)">-</button>
+                        <span class="w-5  md:text-2xl" id="counter-${item.id}">1</span>
+                        <button class="border border-2  px-[8px] md:px-[10px]  text-base md:text-2xl" onClick="itemCounter(${item.id}, +1)">+</button>                                       
                     </div>
             </div>
                 <div class="flex items-center justify-center">
@@ -156,14 +156,14 @@ function fromFavToCart(id){
     let x = `<div  id="${item.id}" price="${item.price}" class=" hover:shadow-2xl hover:-translate-y-4 h-112  w-80  xl:w-80 bg-gray-200 rounded-sm
      border-1 border-gray-300  transition duration-300">
                 <img class="w-full h-70 mx-auto  " src= "${item.imgSrc}" alt="productImage">
-                    <div class="flex flex-col px-5 mx-auto py-5 font-bold text-left  gap-y-2 ">
+                    <div class="flex flex-col px-5 mx-auto py-5 font-bold  text-left  gap-y-2 ">
                     <h2 class="text-lg font-bold">${item.title}</h2>
                     <span class="text-sm">Color : ${item.color}</span>
                     <p class="inline text-sm">Price : ${item.price} LE</p>
-                      <div class="mt-[-65px] mb-[20px] ml-45 space-x-1  ">
-                        <button class="border border-2  px-[8px] md:px-[10px] font-bold text-base md:text-2xl"  onClick="itemCounter(${item.id}, -1)">-</button>
-                        <span class="w-5 font-bold md:text-2xl" id="counter-${item.id}">1</span>
-                        <button class="border border-2  px-[8px] md:px-[10px] font-bold text-base md:text-2xl" onClick="itemCounter(${item.id}, +1)">+</button>                                       
+                      <div class="mt-[-65px] mb-[20px] ml-45 space-x-1 font-bold md:font-normal ">
+                        <button class="border border-2  px-[8px] md:px-[10px]  text-base md:text-2xl"  onClick="itemCounter(${item.id}, -1)">-</button>
+                        <span class="w-5 md:text-2xl" id="counter-${item.id}">1</span>
+                        <button class="border border-2  px-[8px] md:px-[10px]  text-base md:text-2xl" onClick="itemCounter(${item.id}, +1)">+</button>                                       
                     </div>
             </div>
                     <div class="flex items-center justify-center">
