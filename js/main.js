@@ -12,15 +12,15 @@ function generateItems () {
     return `<div  id="${item.id}" price="${item.price}" class=" hover:shadow-2xl hover:-translate-y-4 h-112  w-80  xl:w-80 bg-gray-200 rounded-sm
      border-1 border-gray-300  transition duration-300">
                 <img class="w-full h-70 mx-auto  " src= "${item.imgSrc}" alt="productImage">
-                <div class="flex flex-col px-20 mx-auto py-5  text-left  gap-y-2 ">
+                <div class="flex flex-col px-20 mx-auto py-5 font-bold text-left  gap-y-2 ">
                     <h2 class="text-lg font-bold">${item.title}</h2>
                     <span class="text-sm">Color : ${item.color}</span>
                     <p class="text-sm">Price : ${item.price}.LE</p>
                 </div>
                     <div class="flex items-center justify-center">
-                        <button class="rounded-lg  md:py-1 px-2 md:px-4 font-bold bg-black text-white hover:bg-gray-900  
+                        <button class="rounded-md  py-1 px-4 font-bold bg-black text-white hover:bg-gray-900  
                          transition duration-300" id="addToCart-${item.id}" onClick="addProductToCart(${item.id})">Add to Cart</button>
-                         <button class="hidden rounded-lg  md:py-1 px-2 md:px-4  font-bold bg-red-700 text-white hover:bg-red-800 hover:text-white
+                         <button class="hidden rounded-md  py-1 px-4  font-bold bg-red-700 text-white hover:bg-red-800 hover:text-white
                           transition duration-300" id="removeItem-${item.id}" onClick="removeProduct(${item.id})">
                           Remove From Cart</button>
                         <button class="" id="addFav-${item.id}" onClick="addFavItems(${item.id})">
@@ -209,15 +209,15 @@ function defaultSearchBar (targetSearch){
           return `<div  id="${item.id}" price="${item.price}" class=" hover:shadow-2xl hover:-translate-y-4 h-112  w-80  bg-gray-200 rounded-sm
      border-1 border-gray-300  transition duration-300">
                 <img class="w-full h-70 mx-auto  " src= "${item.imgSrc}" alt="productImage">
-                <div class="flex flex-col px-20 mx-auto py-5  text-left  gap-y-2 ">
+                <div class="flex flex-col px-20 mx-auto py-5 font-bold text-left  gap-y-2 ">
                     <h2 class="text-lg font-bold">${item.title}</h2>
                     <span class="text-sm">Color : ${item.color}</span>
                     <p class="text-sm">Price : ${item.price}.LE</p>
                 </div>
                     <div class="flex items-center justify-center">
-                        <button class="rounded-lg  md:py-1 px-2 md:px-4 font-bold bg-black text-white hover:bg-gray-900  
+                        <button class="rounded-md  py-1 px-4 font-bold bg-black text-white hover:bg-gray-900  
                          transition duration-300" id="addToCart-${item.id}" onClick="addProductToCart(${item.id})">Add to Cart</button>
-                         <button class="hidden rounded-lg  md:py-1 px-2 md:px-4  font-bold bg-red-700 text-white hover:bg-red-800 hover:text-white
+                         <button class="hidden rounded-md  py-1 px-4 font-bold bg-red-700 text-white hover:bg-red-800 hover:text-white
                           transition duration-300" id="removeItem-${item.id}" onClick="removeProduct(${item.id})">
                           Remove From Cart</button>
                         <button class="" id="addFav-${item.id}" onClick="addFavItems(${item.id})">
